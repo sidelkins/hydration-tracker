@@ -22,7 +22,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/dotenv": "^8.2.0",
 		"better-sqlite3": "^11.2.1",
+		"chart.js": "^4.4.4",
+		"chartjs-adapter-date-fns": "^3.0.0",
 		"dotenv": "^16.4.5"
 	}
 }

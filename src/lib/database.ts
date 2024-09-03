@@ -1,6 +1,7 @@
 import Database from 'better-sqlite3';
+import * as constants from '$lib/constants';
 
-const db = new Database('./db.sqlite', { verbose: console.log });
+const db = new Database(constants.db_file, { verbose: constants.isDev ? console.log : undefined });
 
 export async function getDb() {
   return db;
@@ -9,11 +10,11 @@ export async function getDb() {
 export async function setupDatabase() {
   const db = await getDb();
   db.exec(`
-    CREATE TABLE IF NOT EXISTS WaterConsumption (
-      consumption_id INTEGER PRIMARY KEY AUTOINCREMENT,
-      consumption_date DATE NOT NULL,
-      amount REAL NOT NULL,  -- Amount in liters or other units
-      UNIQUE (consumption_date)
+    CREATE TABLE IF NOT EXISTS consumption (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      timestamp DATE NOT NULL,
+      amount REAL NOT NULL,
+      UNIQUE (timestamp)
     );
   `);
 }

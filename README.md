@@ -5,7 +5,7 @@
 ## Features ✨
 
 - 📝**Daily Tracking**: Log your daily water consumption effortlessly. 
-- 📊 **History Graph**: **🚧 (coming soon) 🚧** Visualize your intake history with interactive charts.
+- 📊 **History Graph**: **🚧WORK IN PROGRESS🚧** Visualize your intake history with interactive charts.
 - 🚀 **Lightweight**: Designed to be simple and efficient. 
 - 🐳 **Dockerized**: **🚧 (coming soon) 🚧** Easily deploy and manage with Docker. 
 
@@ -13,7 +13,7 @@
 
 - **Framework**: SvelteKit
 - **Database**: [SQLite](https://www.sqlite.org/) using [better-sqlite3](https://github.com/WiseLibs/better-sqlite3)
-- **🚧 (coming soon) 🚧** **Chart Library**:  [Chart.js](https://www.chartjs.org/) 
+- **Chart Library**:  [Chart.js](https://www.chartjs.org/) 
 - **🚧 (coming soon) 🚧** **Containerization**: [Docker](https://www.docker.com/)
 
 ## Contact 📬
