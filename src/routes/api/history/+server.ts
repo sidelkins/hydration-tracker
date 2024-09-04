@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { getDb } from '$lib/database';
+import { getDb } from '$lib/database.server';
 
 export const GET: RequestHandler = async () => {
     const db = await getDb();

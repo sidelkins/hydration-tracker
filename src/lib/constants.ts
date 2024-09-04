@@ -1,8 +1,4 @@
-export const isDev: boolean = import.meta.env.VITE_ENV === "development";
-export const title: string = "Simple Water Tracker";
-export const db_file: string = "db.sqlite";
-// environment variables currently do not work
-//export const db_file: string = process.env.DB_FILE ?? "db.sqlite";
+export const title: string = "Hydration Tracker";
 
 // Routes
 export const homeLoc: string = "/";
