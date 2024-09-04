@@ -1,4 +1,5 @@
 # Hydration Tracker 💧
+![Docker Pulls](https://img.shields.io/docker/pulls/:sidelkins/:hydration-tracker)
 
 **Hydration Tracker** is a lightweight web application designed to help you track and monitor your daily water consumption. It features a clean and minimalistic interface, a SQL database for storing data, and graphical representation of your water intake history.
 
