@@ -1,7 +1,8 @@
 import Database from 'better-sqlite3';
 import * as constants from '$lib/constants';
+import * as serverConstants from '$lib/constants.server';
 
-const db = new Database(constants.db_file, { verbose: constants.isDev ? console.log : undefined });
+const db = new Database(serverConstants.dbFile, { verbose: serverConstants.isDev ? console.log : undefined });
 
 export async function getDb() {
   return db;

@@ -1,5 +1,5 @@
 import type { Handle } from '@sveltejs/kit';
-import { setupDatabase } from '$lib/database';
+import { setupDatabase } from '$lib/database.server';
 
 // Use the Handle type from @sveltejs/kit for better type safety
 export const handle: Handle = async ({ event, resolve }) => {
