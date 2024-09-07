@@ -14,7 +14,7 @@ export async function setupDatabase() {
     CREATE TABLE IF NOT EXISTS consumption (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       timestamp DATE NOT NULL,
-      amount REAL NOT NULL,
+      amount REAL NOT NULL CHECK(amount >= 0),
       UNIQUE (timestamp)
     );
   `);
